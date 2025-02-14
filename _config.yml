@@ -1,0 +1,10 @@
+remote_theme: minimal-mistakes@master
+plugins:
+- jekyll-remote-theme
+
+title: Cap Recognizer
+description: An image classifiacation API that classifies 20 different types of caps worn around the world
+
+aurhor:
+  name: Mohammad Fayez Ullah
+
