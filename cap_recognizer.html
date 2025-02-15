@@ -1,35 +1,23 @@
 ---
 title: Cap Recognizer
-layout: Page
+layout: page
 ---
 
-
-<input id = "photo" type="file">
-<div id = "results"> </div>
+<input id="photo" type="file">
+<div id="results"></div>
 <script>
-import { Client } from "@gradio/client";
-
-const client = await Client.connect("fayez94/cap-recognizer");
-
-async function read() {
-    const file = photo.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-
-    reader.onload = async () => {
-        const result = await client.predict("/predict", {
-            data: [reader.result],
-        });
-
-        const label = result.data[0].label;
-        results.innerHTML = `<br/> <img src="${reader.result}" width="500"> <p>${label}</p>`;
-    };
-}
-
-photo.addEventListener("input", read);
-
-
-
+    async function loaded(reader) {   
+    const response = await fetch("https://fayez94-cap-recognizer.hf.space/run/predict", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({data: [reader.result]})});
+    const json = await response.json();
+    const label = json['data'][0]['label'];
+    results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+    }
+    function read() {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => loaded(reader))
+        reader.readAsDataURL(photo.files[0]);
+    }
+    photo.addEventListener('input', read);
 </script>
