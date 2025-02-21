@@ -34,8 +34,8 @@ Details can be found in `notebooks/data_prep.ipynb`
 **Data Cleaning:** This part took the highest time. Since I collected data from browser, there were many noises. Also, there were images that contained. I cleaned and updated data using fastai ImageClassifierCleaner. I cleaned the data each time after training or finetuning, except for the last time which was the final iteration of the model. <br/>
 
 # Model Deployment
-I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/msideadman/cap-recognizer). <br/>
-<img src = "deployment/gradio_app.png" width="700" height="350">
+I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/fayez94/cap-recognizer_2). <br/>
+<img src = "deployment/gradio_App.png" width="700" height="350">
 
 # API integration with GitHub Pages
-The deployed model API is integrated [here](msi1427.github.io/Cap-Recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+The deployed model API is integrated [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.

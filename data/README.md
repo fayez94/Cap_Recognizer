@@ -1,0 +1,1 @@
+To downlaod data for cap recognizer go to the link: https://drive.google.com/drive/folders/1--knBkv25W0iku5wlW6kKkQEwECw9WtO?usp=share_link
