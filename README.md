@@ -23,22 +23,55 @@ The types are following: <br/>
 19. rasta cap
 20. visor cap
 
-# Dataset Preparation
-**Data Collection:** Downloaded from DuckDuckGo using term name <br/>
-**DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
-**Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
-Details can be found in `notebooks/data_prep.ipynb`
+## Data Collection and Preparation
 
-# Training and Data Cleaning
-**Training:** Fine-tuned a resnet34 model for 5 epochs (3 times) and got upto ~89% accuracy. <br/>
-**Data Cleaning:** This part took the highest time. Since I collected data from browser, there were many noises. Also, there were images that contained. I cleaned and updated data using fastai ImageClassifierCleaner. I cleaned the data each time after training or finetuning, except for the last time which was the final iteration of the model. <br/>
+### Data Collection
+The dataset was collected from DuckDuckGo using cap category names as search terms, ensuring diverse images for training.
 
-# Model Deployment
+### DataLoader
+The **fastai DataBlock API** was used to set up the `DataLoader`, organizing the data into training and validation sets.
+
+### Data Augmentation
+**fastai** provides default GPU-accelerated data augmentations, improving the model's generalization.
+
+For more details, check the [data_prep.ipynb](notebooks/data_prep.ipynb) notebook.
+
+
+## Training, Data Cleaning, and Inference
+
+### **Training**
+The model was fine-tuned using **ResNet34** for 5 epochs, repeated 3 times, achieving an accuracy of approximately **89%**.
+
+### **Data Cleaning**
+Data cleaning was the most time-consuming part of the process. Since the data was collected from a browser, there was a significant amount of noise, and some images contained irrelevant content. To clean and update the dataset, I used the **fastai ImageClassifierCleaner**.
+
+Data cleaning was performed after each training or fine-tuning session, except for the final iteration, which represented the final model.
+
+### **Inference**
+For inference, the trained model is used to classify new cap images. The **fastai Learner** was utilized to load the fine-tuned model and make predictions. This allows the model to classify unseen cap images accurately, based on the learned patterns during training.
+
+Details can be found in notebooks/training_cleaning_inference.ipynb
+
+## Model Deployment
+
+The model was deployed to **HuggingFace Spaces** as a Gradio app. You can access the deployed app [here](https://huggingface.co/spaces/fayez94/cap-recognizer_2).  
+The implementation can be found in the `deployment` folder.
+
+![Gradio App](deployment/gradio_App.png)
+
+
+## API Integration with GitHub Pages
+
+The deployed model API is integrated into a **GitHub Pages** website. You can view the integration [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html).  
+Implementation and other details are available in the `docs` folder.
+
+
+<!-- ## Model Deployment
 I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/fayez94/cap-recognizer_2). <br/>
 <img src = "deployment/gradio_App.png" width="700" height="350">
 
-# API integration with GitHub Pages
-The deployed model API is integrated [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+## API integration with GitHub Pages
+The deployed model API is integrated [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html) in GitHub Pages Website. Implementation and other details can be found in `docs` folder. -->
 
 ## Contributions
 
