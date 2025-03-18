@@ -39,3 +39,30 @@ I deployed to model to HuggingFace Spaces Gradio App. The implementation can be 
 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+
+## Contributions
+
+Contributions are always welcome! If you'd like to contribute to the Cap Recognizer project, here’s how you can help:
+
+### How to Contribute:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add new feature'`)
+5. Push to the branch (`git push origin feature-name`)
+6. Open a Pull Request
+
+### Ways You Can Contribute:
+- Add support for new cap categories or labels
+- Improve the accuracy of the model by fine-tuning or experimenting with new architectures
+- Enhance data collection or augmentation techniques
+- Update documentation or add more examples
+- Report bugs or suggest new features
+
+Thank you for considering contributing! 🙏
+
+## 📬 Contact
+For any questions or suggestions, feel free to reach out!
+
+📧 Email: mdfayezullah2624@gmail.com  
+🐙 GitHub: [fayez94](https://github.com/fayez94)
