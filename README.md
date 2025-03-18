@@ -65,14 +65,6 @@ The implementation can be found in the `deployment` folder.
 The deployed model API is integrated into a **GitHub Pages** website. You can view the integration [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html).  
 Implementation and other details are available in the `docs` folder.
 
-
-<!-- ## Model Deployment
-I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/fayez94/cap-recognizer_2). <br/>
-<img src = "deployment/gradio_App.png" width="700" height="350">
-
-## API integration with GitHub Pages
-The deployed model API is integrated [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html) in GitHub Pages Website. Implementation and other details can be found in `docs` folder. -->
-
 ## Contributions
 
 Contributions are always welcome! If you'd like to contribute to the Cap Recognizer project, here’s how you can help:
