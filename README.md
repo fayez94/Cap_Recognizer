@@ -50,7 +50,7 @@ Data cleaning was performed after each training or fine-tuning session, except f
 ### **Inference**
 For inference, the trained model is used to classify new cap images. The **fastai Learner** was utilized to load the fine-tuned model and make predictions. This allows the model to classify unseen cap images accurately, based on the learned patterns during training.
 
-Details can be found in notebooks/training_cleaning_inference.ipynb
+Details can be found in [training_cleaning_inference.ipynb](notebooks/training_cleaning_inference.ipynb)
 
 ## Model Deployment
 
