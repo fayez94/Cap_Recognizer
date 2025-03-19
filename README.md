@@ -23,6 +23,43 @@ The types are following: <br/>
 19. rasta cap
 20. visor cap
 
+
+## 📌 Project Workflow
+
+### 1️⃣ Problem Statement
+Develop an AI-powered model to classify various types of caps from images.
+
+### 2️⃣ Data Collection
+- Used **DuckDuckGo** image search to collect images of **20 cap categories**.
+- Automated image downloading with **FastAI’s `search_images_ddg` function**.
+- Maintained a balanced dataset across all categories.
+
+### 3️⃣ Data Preprocessing
+- Removed duplicate and irrelevant images.
+- Standardized image size to **224x224 pixels**.
+- Applied **data augmentation** (rotation, flipping, zoom, lighting adjustments) for robustness.
+
+### 4️⃣ Model Training
+- Used **ResNet34** with **transfer learning**.
+- Implemented **FastAI’s `cnn_learner`** for efficient training.
+- Employed **cross-entropy loss** and **Adam optimizer**.
+- Split dataset into **training and validation sets**.
+
+### 5️⃣ Model Evaluation
+- Achieved **94% accuracy** on the validation set.
+- Analyzed misclassifications with a **confusion matrix**.
+- Identified areas for improvement.
+
+### 6️⃣ Model Deployment
+- Exported model using `learner.export()`.
+- Built an interactive **Gradio-based web interface**.
+- Deployed the model on **Hugging Face Spaces**.
+
+### 7️⃣ Future Improvements
+- Expand dataset for better generalization.
+- Experiment with **ResNet50 or EfficientNet** for higher accuracy.
+- Implement **active learning** for dataset refinement.
+
 ## Data Collection and Preparation
 
 ### Data Collection
