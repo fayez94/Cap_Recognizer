@@ -109,8 +109,8 @@ Follow these steps to set up and run the project on your local machine.
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/fayez94/Fortune-Global-500-Data-Visualization-Project.git
-cd Fortune-Global-500-Data-Visualization-Project
+git clone https://github.com/fayez94/Cap_Recognizer.git
+cd Cap_Recognizer
 ```
 
 ### 2️⃣ Create and Activate a Virtual Environment
@@ -132,10 +132,10 @@ source myvenv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run the Scraper Scripts
+### 4️⃣ Run the app file
 
 ```bash
-python Scraper.py
+python app.py
 ```
 
 ### 5️⃣ Deactivating the Virtual Environment
