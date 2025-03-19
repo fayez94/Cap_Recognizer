@@ -102,6 +102,48 @@ The implementation can be found in the `deployment` folder.
 The deployed model API is integrated into a **GitHub Pages** website. You can view the integration [here](https://fayez94.github.io/Cap_Recognizer/docs/cap_recognizer.html).  
 Implementation and other details are available in the `docs` folder.
 
+
+## 🚀 Project Usage Guide
+
+Follow these steps to set up and run the project on your local machine.
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/fayez94/Fortune-Global-500-Data-Visualization-Project.git
+cd Fortune-Global-500-Data-Visualization-Project
+```
+
+### 2️⃣ Create and Activate a Virtual Environment
+
+#### 🔹 For Windows:
+```bash
+python -m venv myvenv
+myvenv\Scripts\activate
+```
+
+#### 🔹 For macOS/Linux:
+```bash
+python3 -m venv myvenv
+source myvenv/bin/activate
+```
+
+### 3️⃣ Install Required Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the Scraper Scripts
+
+```bash
+python Scraper.py
+```
+
+### 5️⃣ Deactivating the Virtual Environment
+```bash
+deactivate
+```
+
+
 ## Contributions
 
 Contributions are always welcome! If you'd like to contribute to the Cap Recognizer project, here’s how you can help:
